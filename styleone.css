@@ -1,0 +1,65 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* variables */
+
+:root {
+  --header-height: 4.5rem;
+
+  /* color */
+  --hue: 6;
+
+  /* HSL color mode */
+  --base-color: hsl(var(--hue) 82% 67%);
+  --base-color-second: hsl(var(--hue) 78% 61%);
+  --title-color: hsl(0 0 100 100%);
+  --title-color-second: hsl(0 0 84 51%);
+  --background-color: hsl(0 0 77 40%);
+  --background-title: hsl(0 0 52 43%);
+
+  /* font */
+  --title-font-family: 'Rubik', sans-serif;
+  --home-font-family: 'Lobster', cursive;
+  --title-cook-size: 2.4rem;
+  --title-one-size: 2rem;
+  --title-two-size: 1.8rem;
+  --title-three-size: 1.4rem;
+  --title-four-size: 1.2rem;
+}
+
+/* html */
+html {
+  font-size: 62.5%;
+  font-family: var(--title-font-family);
+}
+/* header */
+.container {
+  margin: 0 1.6rem;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+#txt {
+  font-size: var(--title-two-size);
+  color: white;
+  font-weight: 400;
+}
+.signal img {
+  width: 9rem;
+  height: 2.5rem;
+}
+header {
+  background: var(--base-color);
+  padding: 2rem;
+}
